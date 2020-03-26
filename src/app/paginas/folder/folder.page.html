@@ -12,7 +12,7 @@
     <ion-card-header>
       <ion-card-title>{{ produto.nome }}</ion-card-title>
     </ion-card-header>
-  <ion-img src="assets/{{produto.foto}}"></ion-img>
+  <ion-img [src]="'http://localhost:8088/php/fotos_servidor/' +produto.foto"></ion-img>
     <ion-card-content>
       {{ produto.descricao }}
     </ion-card-content>
