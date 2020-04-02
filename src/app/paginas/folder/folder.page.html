@@ -10,11 +10,11 @@
 <ion-content [fullscreen]="true">
   <ion-card class="text-center" *ngFor="let produto of produtos">
     <ion-card-header>
-      <ion-card-title>{{ produto.nome }}</ion-card-title>
+      <ion-card-title>{{produto.nome}}</ion-card-title>
     </ion-card-header>
   <ion-img [src]="'http://localhost:8088/php/fotos_servidor/' +produto.foto"></ion-img>
     <ion-card-content>
-      {{ produto.descricao }}
+      {{produto.descricao}}
     </ion-card-content>
   </ion-card>
 

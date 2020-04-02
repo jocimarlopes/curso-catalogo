@@ -8,9 +8,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { Http, HttpModule } from '@angular/http';
-import { Base64 } from '@ionic-native/base64/ngx';
-import { ImagePicker } from '@ionic-native/image-picker/ngx';
+import { HttpModule } from '@angular/http';
 
 
 @NgModule({
@@ -25,9 +23,7 @@ import { ImagePicker } from '@ionic-native/image-picker/ngx';
   providers: [
     StatusBar,
     SplashScreen,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-    Base64,
-    ImagePicker
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
 })
