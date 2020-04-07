@@ -18,6 +18,7 @@ export class FolderPage implements OnInit {
 
   ngOnInit() {
   }
+
   listProdutos() {
     this.http.get(this.serviceUrl.getUrl()+"listDados.php").pipe(map(res => res.json()))
     .subscribe(

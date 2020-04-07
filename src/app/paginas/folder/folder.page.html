@@ -12,10 +12,16 @@
     <ion-card-header>
       <ion-card-title>{{produto.nome}}</ion-card-title>
     </ion-card-header>
-  <ion-img [src]="'http://localhost:8088/php/fotos_servidor/' +produto.foto"></ion-img>
+  <ion-img [src]="serviceUrl.getImgUrl()+produto.foto"></ion-img>
     <ion-card-content>
       {{produto.descricao}}
     </ion-card-content>
   </ion-card>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button  [routerLink]="['/cadastro-produtos']">
+      <ion-icon name="add-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 
 </ion-content>

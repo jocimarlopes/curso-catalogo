@@ -14,6 +14,9 @@ export class UrlService {
   getUrl() {
     return this.url;
   }
+  getImgUrl() {
+    return this.url + "fotos_servidor/";
+  }
 
   async alertas(titulo, msg) {
     const alert = await this.alert.create({
